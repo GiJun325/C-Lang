@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void){
+    
+    int ch, i = 0;
+    char message[100];
+    
+    while ((ch = getchar()) != '\n') {
+        message[i++] = ch;
+    }
+    
+    message[i] = '\0';
+    
+    printf("%s", message);
+    
+    return 0;
+}
